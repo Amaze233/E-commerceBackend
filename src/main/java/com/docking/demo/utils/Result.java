@@ -4,6 +4,7 @@ package com.docking.demo.utils;
 import java.util.HashMap;
 import java.util.Map;
 
+
 //统一返回结果的类
 public class Result {
 
@@ -56,7 +57,7 @@ public class Result {
     public static Result ok() {
         Result r = new Result();
         r.setSuccess(true);
-        r.setCode(com.docking.demo.utils.ResultCode.SUCCESS);
+        r.setCode(200);
         r.setMessage("成功");
         return r;
     }
@@ -65,7 +66,7 @@ public class Result {
     public static Result error() {
         Result r = new Result();
         r.setSuccess(false);
-        r.setCode(com.docking.demo.utils.ResultCode.ERROR);
+        r.setCode(-1);
         r.setMessage("失败");
         return r;
     }
